@@ -9,6 +9,8 @@
 > This is an automatic zoom login application. Run Open.exe, follow the instructions and after choosing your video and audio please leave it on in the background so it can open zoom once your schedule entered matches with the current date and time of an event.
 
 ### 🏠 [Homepage](https://github.com/AjaybirRandhawa/Zoom-Login)
+### Demo
+[![Demo Image](https://prnt.sc/xir5kc)](https://studio.youtube.com/video/A04ZxpL4R_Q/edit "Zoom Auto Login")
 ### [Demo](https://youtu.be/A04ZxpL4R_Q)
 ## Author
 
