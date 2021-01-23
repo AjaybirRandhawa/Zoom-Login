@@ -107,9 +107,10 @@ Examples:
             print("Start time can not be bigger or same as end time!")
             continue
         for ans in all_input:
-            if (ans[0] == info[0]) and ((ans[1] <= info[1] < ans[2]) or (ans[1] <= info[2] < ans[2])):
+            if (ans[0] == info[0]) and ((ans[1] <= info[1] < ans[2]) or (ans[1] < info[2] <= ans[2])):
                 overlap = True
         if overlap == True:
+            overlap = False
             print("There is an overlap, please re check and re enter.")
             continue
         if len(info) == 5:
@@ -217,14 +218,12 @@ def openZoom(password, turn_vid, turn_audio):
     auto.press('winleft')
     auto.write('zoom')
     diff = 0
-    time.sleep(1)
+    time.sleep(2)
     while not(auto.locateOnScreen(os.path.join("imgs", "zoom_Button.png")) and (diff < 50)):
         diff += 1
-        print(diff)
-        print(auto.locateOnScreen(os.path.join("imgs", "zoom_button.png")))
         time.sleep(1)
     if (diff >= 50):
-        print("Took too long to load zoom!")
+        print("Took too long to load zoom! Please check internet and try again later!")
         error()
     zoom_button = auto.locateOnScreen(os.path.join("imgs", "zoom_Button.png"))
     auto.click(zoom_button[0], zoom_button[1])
@@ -243,6 +242,8 @@ def openZoom(password, turn_vid, turn_audio):
     while not(auto.locateOnScreen(os.path.join("imgs", "join_button.png")) and (diff < 50)):
         diff+=1
         time.sleep(1)
+        if(auto.locateOnScreen(os.path.join("imgs", "join_button.png"))):
+            break 
     if (diff >= 50):
         print("Took too long to load zoom!")
         error()
@@ -251,7 +252,6 @@ def openZoom(password, turn_vid, turn_audio):
     WIDTH, HEIGHT = auto.size()
     turn_vid = True if turn_vid.lower() == 'yes' else False
     turn_audio = True if turn_audio.lower() == 'yes' else False
-    print(turn_audio, turn_vid)
     if auto.pixelMatchesColor(int(WIDTH*0.4), int(HEIGHT*0.55)+40, (14, 114, 235)) == turn_vid:
         auto.click(int(WIDTH*0.4), int(HEIGHT*0.55)+40)
     if auto.pixelMatchesColor(int(WIDTH*0.4), int(HEIGHT*0.55), (14, 114, 235)) == turn_audio:
