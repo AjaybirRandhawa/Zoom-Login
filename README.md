@@ -1,2 +1,23 @@
-# Zoom-Login
-Automatically log you in zoom when time is starting.
+<h1 align="center">Welcome to the Zoom Auto Logger 👋</h1>
+<p>
+  <img alt="Version 1.0" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-None-yellow.svg" />
+  </a>
+</p>
+
+> This is an automatic zoom login application. Run Open.exe, follow the instructions and after choosing your video and audio please leave it on in the background so it can open zoom once your schedule entered matches with the current date and time of an event.
+
+### 🏠 [Homepage](https://github.com/AjaybirRandhawa/Zoom-Login)
+
+## Author
+
+👤 **Ajaybir Randhawa**
+
+* Website: ajaybir.randhawa.github.io
+* Github: [@Ajaybir Randhawa](https://github.com/AjaybirRandhawa)
+* LinkedIn: [@Ajaybir Randhawa](https://linkedin.com/in/AjaybirRandhawa)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
