@@ -10,7 +10,7 @@
 
 ### 🏠 [Homepage](https://github.com/AjaybirRandhawa/Zoom-Login)
 ### Demo
-[![Demo Image](https://prnt.sc/xir5kc)](https://studio.youtube.com/video/A04ZxpL4R_Q/edit "Zoom Auto Login")
+[![Demo Image](http://img.youtube.com/vi/A04ZxpL4R_Q/0.jpg)](https://studio.youtube.com/video/A04ZxpL4R_Q/edit "Zoom Auto Login")
 ### [Demo](https://youtu.be/A04ZxpL4R_Q)
 ## Author
 
